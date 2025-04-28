@@ -11,9 +11,9 @@ spec:
       github:
         owner: ocanema
         repo: gitops-cert-level-3-examples
+        labels:
+        - preview-ready
       requeueAfterSeconds: 180
-      lables:
-      - preview-ready
   template:
     metadata:
       name: 'myapp-{{.branch}}'
